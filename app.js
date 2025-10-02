@@ -1,18 +1,27 @@
-alert('Boas vindas ao jogo do número secreto');
-
-// Adicione um console.log para verificar o valor de "chute" após a entrada do usuário
-let chute = prompt('Escolha um número entre 1 e 10');
-console.log('Valor do chute:', chute);
-
-let numeroSecreto = 4;
-
-// Adicione um console.log para verificar a comparação entre "chute" e "numeroSecreto"
-console.log('Resultado da comparação:', chute == numeroSecreto);
-
-if (chute == numeroSecreto) {
-    alert('Acertou');
+//1.Pergunte ao usuário qual é o dia da semana. Se a resposta for "Sábado" ou "Domingo", mostre "Bom fim de semana!". Caso contrário, mostre "Boa semana!".
+let diaSemana = prompt("Qual é o dia da semana?");
+if (diaSemana === "Sábado" || diaSemana === "Domingo") {
+    alert("Bom fim de semana!");
 } else {
-    // Adicione um console.log para verificar o valor de "numeroSecreto" quando o jogador erra
-    console.log('Valor do número secreto:', numeroSecreto);
-    alert('O número secreto era ' + numeroSecreto);
+    alert("Boa semana!");
 }
+//2.Verifique se um número digitado pelo usuário é positivo ou negativo. Mostre um alerta informando.
+let numeroDigitado = prompt("Digite um número:");
+if (numeroDigitado >= 0) {
+    alert("O número é positivo.");
+    }else{
+        alert("O número é negativo.");  
+    }
+//3.Crie um sistema de pontuação para um jogo. Se a pontuação for maior ou igual a 100, mostre "Parabéns, você venceu!". Caso contrário, mostre "Tente novamente para ganhar.".
+let timeA = prompt("Digite a pontuação do Time A:");
+if (timeA >= 100) {
+    alert("Parabéns, Time A venceu!");
+} else {
+    alert("Tente novamente para ganhar.");
+}
+//4.Crie uma mensagem que informa o usuário sobre o saldo da conta, usando uma template string para incluir o valor do saldo.
+let saldo = 2500.75;
+alert(`Seu saldo atual é de R$ ${saldo}.`);
+//5.Peça ao usuário para inserir seu nome usando prompt. Em seguida, mostre um alerta de boas-vindas usando esse nome.
+let nomeUsuario = prompt("Por favor, insira seu nome:");
+alert(`Boas vindas, ${nomeUsuario}!`);
